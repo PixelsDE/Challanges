@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Challanges">
+    <output-path>$PROJECT_DIR$/../../../../Carina/Desktop/Carina/Minecraft/Server/Spigot Server/Test Server/1.16.5/plugins</output-path>
+    <root id="archive" name="Challanges.jar">
+      <element id="module-output" name="Challanges" />
+    </root>
+  </artifact>
+</component>

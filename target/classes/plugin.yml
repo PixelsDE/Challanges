@@ -1,0 +1,11 @@
+name: Challanges
+main: de.bypixels.Challanges
+api-version: 1.16
+version: 1.0.0
+load: STARTUP
+authors: [ byPixels, PixelsDE ]
+description: A Challanges Plugin like Basti GHG
+
+commands:
+  oneblock:
+    description: Starts the OneBlock Challange!
