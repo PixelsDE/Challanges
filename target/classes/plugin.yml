@@ -7,5 +7,5 @@ authors: [ byPixels, PixelsDE ]
 description: A Challanges Plugin like Basti GHG
 
 commands:
-  oneblock:
-    description: Starts the OneBlock Challange!
+    challanges:
+      description: Opens the GUI

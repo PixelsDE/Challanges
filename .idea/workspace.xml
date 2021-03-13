@@ -5,30 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6119a146-486b-46e7-bfbb-4a44ea774f7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/EventGUIHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_destroystokyo_paper_paper_api_1_16_5_R0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_adventure_api_4_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_adventure_key_4_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_adventure_text_serializer_gson_4_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_adventure_text_serializer_legacy_4_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_adventure_text_serializer_plain_4_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_examination_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_kyori_examination_string_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_20_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/FileHander.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomDrops.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Challanges.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challanges.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/ClickGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/ClickGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/EventGUIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/EventGUIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/MESSAGES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangesGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangesGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/MESSAGES.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/MESSAGES.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,7 +88,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -159,5 +156,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
