@@ -1,11 +1,10 @@
 package de.bypixels;
 
-import de.bypixels.Utils.GUIs.ClickGUI;
 import de.bypixels.Utils.GUIs.EventGUIHandler;
 import de.bypixels.Utils.Texts.FileHander;
 import de.bypixels.Utils.Texts.Messages;
 import de.bypixels.Utils.Util;
-import de.bypixels.challanges.ChallangesGUI;
+import de.bypixels.Utils.GUIs.ChallangesMainGUICommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -39,7 +38,7 @@ public class Challanges extends JavaPlugin {
             exception.printStackTrace();
         }
         pluginManager.registerEvents(new EventGUIHandler(this), this);
-        this.getCommand("challanges").setExecutor(new ChallangesGUI(this));
+        this.getCommand("challanges").setExecutor(new ChallangesMainGUICommand());
     }
 
 

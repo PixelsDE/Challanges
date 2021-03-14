@@ -1,4 +1,4 @@
-package de.bypixels.challanges;
+package de.bypixels.Utils.GUIs;
 
 import de.bypixels.Challanges;
 import de.bypixels.Utils.Texts.Durations;
@@ -10,13 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class ChallangesGUI implements CommandExecutor {
-
-    private Challanges challenges;
-
-    public ChallangesGUI(Challanges challenges) {
-        this.challenges = challenges;
-    }
+public class ChallangesMainGUICommand implements CommandExecutor {
 
 
     @Override
