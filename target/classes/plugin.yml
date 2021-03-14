@@ -9,3 +9,4 @@ description: A Challanges Plugin like Basti GHG
 commands:
     challanges:
       description: Opens the GUI
+      aliases: [challange,bastighg,ghg]

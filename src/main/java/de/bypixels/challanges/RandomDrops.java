@@ -12,6 +12,9 @@ public class RandomDrops implements Listener {
         return randromDropInventory;
     }
 
+    public void setupRandomDrops(){
+
+    }
     public void createInventory(){
         randromDropInventory = Bukkit.createInventory(null, 9, "§3Random Drop Inventory");
 
