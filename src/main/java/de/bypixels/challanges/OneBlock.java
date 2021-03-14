@@ -1,16 +1,13 @@
 package de.bypixels.challanges;
 
 import de.bypixels.Challanges;
-import de.bypixels.Utils.Messages;
+import de.bypixels.Utils.Texts.Durations;
+import de.bypixels.Utils.Texts.Messages;
 import org.bukkit.*;
 import org.bukkit.block.BlockFace;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 
 public class OneBlock implements Listener {
@@ -19,8 +16,8 @@ public class OneBlock implements Listener {
     public static boolean challangeStarted;
 
 
-/*    challangeStarted = true;
-    */
+    /*    challangeStarted = true;
+     */
 
     private Challanges challenges;
 
@@ -29,8 +26,15 @@ public class OneBlock implements Listener {
     }
 
 
-    public static Material block = null;
+    private static Material block = null;
 
+    public static void setBlock(Material block) {
+        OneBlock.block = block;
+    }
+
+    public static Material getBlock() {
+        return block;
+    }
 
     @EventHandler(ignoreCancelled = true)
     public void onPlayerMove(PlayerMoveEvent event) {
@@ -42,10 +46,9 @@ public class OneBlock implements Listener {
         if (!playerBlock.equals(block)) {
             player.setHealth(0);
             resetChallange(player);
-            player.sendTitle(Messages.BLOCKSTEP.getMessageTitle(), Messages.PREFIX.getMessage()+Messages.BLOCKSTEP.getMessage(), 10, 60, 10);
+            player.sendTitle(Messages.BLOCKSTEP.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.BLOCKSTEP.getMessage(), Durations.WRONGSTEP.getDurationIn(), Durations.WRONGSTEP.getDurationMain(), Durations.WRONGSTEP.getDurationOut());
         }
     }
-
 
 
     void resetChallange(Player player) {

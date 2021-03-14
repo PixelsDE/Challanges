@@ -1,4 +1,4 @@
-package de.bypixels.Utils;
+package de.bypixels.Utils.Texts;
 
 import de.bypixels.Challanges;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -23,6 +23,9 @@ public class FileHander {
         return configuration.getBoolean(path);
     }
 
+   public int getInteger(String path){
+        return configuration.getInt(path);
+    }
 
     public FileHander() throws IOException, InvalidConfigurationException {
         configuration.addDefault("prefix", "&7[&3Pixels-Challanges§7]&f ");
@@ -37,6 +40,19 @@ public class FileHander {
         configuration.addDefault("blockstep.title", "&4Wrong Block");
         configuration.addDefault("blockstep.message", "&cYou stepped on the wrong Block!");
         configuration.addDefault("mustplayer.message", "&cYou must be a Player to do this!");
+        configuration.set("animation.wrongstep.in", 10);
+        configuration.set("animation.wrongstep.main", 70);
+        configuration.set("animation.wrongstep.out", 10);
+        configuration.set("animation.oneblock.in", 10);
+        configuration.set("animation.oneblock.main", 70);
+        configuration.set("animation.oneblock.out", 10);
+        configuration.set("animation.permission.in", 10);
+        configuration.set("animation.permission.main", 70);
+        configuration.set("animation.permission.out", 10);
+        configuration.set("animation.arguments.in", 10);
+        configuration.set("animation.arguments.main", 70);
+        configuration.set("animation.arguments.out", 10);
+
 
         configuration.options().copyDefaults(true);
         configuration.save(file);
