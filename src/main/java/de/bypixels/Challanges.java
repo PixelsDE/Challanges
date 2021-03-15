@@ -37,16 +37,15 @@ public class Challanges extends JavaPlugin {
         util.setup();
         Prefix = Messages.PREFIX.getMessage();
 
-        eventGUIHandler = new EventGUIHandler(this);
-        pluginManager.registerEvents(eventGUIHandler, this);
+      util.setEventGUIHandler(new EventGUIHandler(this));
+        pluginManager.registerEvents(util.getEventGUIHandler(), this);
         this.getCommand("challanges").setExecutor(util.getClickGUI());
     }
 
-    private EventGUIHandler eventGUIHandler;
 
-    public EventGUIHandler getEventGUIHandler() {
-        return eventGUIHandler;
-    }
+
+
+
 
 
 
@@ -65,9 +64,6 @@ public class Challanges extends JavaPlugin {
         return util;
     }
 
-    public void setUtil(Util util) {
-        this.util = util;
-    }
 
     public static Challanges getChallenges() {
         return challenges;

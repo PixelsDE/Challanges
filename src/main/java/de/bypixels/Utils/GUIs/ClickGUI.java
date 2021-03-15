@@ -15,11 +15,16 @@ import org.jetbrains.annotations.NotNull;
 public class ClickGUI extends GUI implements CommandExecutor {
 
 
+    //Items in the Main Click GUI
+
     public ClickGUI(int inventorySize, String inventoryName) {
         super(inventorySize, inventoryName);
-        createInventory();
-        addItem(9, Challanges.getChallenges().getUtil().getItems().OneBlockItem);
+        addItem( Challanges.getChallenges().getUtil().getItems().OneBlockItem,9);
+        addItem(Challanges.getChallenges().getUtil().getItems().RandomDropGUIItem,13);
+
     }
+
+
 
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, String[] args) {
@@ -37,6 +42,7 @@ public class ClickGUI extends GUI implements CommandExecutor {
                 player.sendTitle(Messages.ARGUMENTS.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.ARGUMENTS.getMessage(), Durations.ARGUMENTS.getDurationIn(), Durations.ARGUMENTS.getDurationMain(), Durations.ARGUMENTS.getDurationOut());
                 return false;
             }
+
             player.openInventory(Challanges.getChallenges().getUtil().getClickGUI().getInventory());
 
         }

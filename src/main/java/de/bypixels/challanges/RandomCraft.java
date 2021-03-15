@@ -1,12 +1,9 @@
 package de.bypixels.challanges;
 
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
-
 import org.bukkit.inventory.ItemStack;
 
-public class RandomDrops implements Listener, ChallangeHandler {
-
+public class RandomCraft implements  ChallangeHandler{
 
     @Override
     public void startChallange(Player player, ItemStack startItem) {

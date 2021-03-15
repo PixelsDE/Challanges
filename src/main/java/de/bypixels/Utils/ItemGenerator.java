@@ -11,13 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ItemGenerator {
+    public ItemGenerator() {
+    }
 
-    private ItemStack itemStack;
-    private ItemMeta meta;
-    private String itemName;
-    private List<String> lores = new ArrayList<>();
-    private HashMap<Enchantment, Integer> itemEnchantments  = new HashMap<>();
-    private Material material;
+
 
     public ItemGenerator(Material material) {
         this.material = material;
@@ -25,12 +22,12 @@ public class ItemGenerator {
         this.meta = itemStack.getItemMeta();
     }
 
-    public ItemGenerator() {
-    }
+
+
 
     public ItemGenerator create(Material material){
         this.material = material;
-        this.itemStack = new ItemStack(material);
+        this.itemStack = new ItemStack(this.material);
         this.meta = itemStack.getItemMeta();
         return this;
     }
@@ -43,6 +40,12 @@ public class ItemGenerator {
         return itemStack;
     }
 
+    private ItemStack itemStack;
+    private ItemMeta meta;
+    private String itemName;
+    private List<String> lores = new ArrayList<>();
+    private HashMap<Enchantment, Integer> itemEnchantments  = new HashMap<>();
+    private Material material;
     public ItemGenerator setItemName(String name) {
         this.itemName = name;
         return this;

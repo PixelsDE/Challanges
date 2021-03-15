@@ -12,6 +12,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.UUID;
 
 public class OneBlock implements Listener, ChallangeHandler {
@@ -19,50 +20,38 @@ public class OneBlock implements Listener, ChallangeHandler {
     public OneBlock() {
     }
 
-    private static Material block = null;
+    private HashMap<UUID, Material> block = new HashMap();
 
-    public static void setBlock(Material block) {
-        OneBlock.block = block;
-    }
 
     private ArrayList<UUID> playersInChallange = new ArrayList<UUID>();
 
     @EventHandler(ignoreCancelled = true)
     public void onPlayerMove(PlayerMoveEvent event) {
+
         Player player = event.getPlayer();
         Material playerBlock = player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType();
-        if (!isChallangeStarted()) return;
-        if (block == null) return;
+        if (!playersInChallange.contains(player.getUniqueId())) return;
+        if (block.get(player.getUniqueId()) == null) return;
         if (playerBlock == Material.AIR || playerBlock == Material.CAVE_AIR || playerBlock == Material.LARGE_FERN) return;
-        if (!playerBlock.equals(block)) {
+        if (!playerBlock.equals(block.get(player.getUniqueId()))) {
             resetChallange(player);
         }
     }
 
 
-    private boolean challangeStarted = false;
-
-    public boolean isChallangeStarted() {
-        return challangeStarted;
-    }
-
-    public void setChallangeStarted(boolean challangeStarted) {
-        this.challangeStarted = challangeStarted;
-    }
-
     @Override
     public void startChallange(Player player, ItemStack startItem) {
         if (!player.hasPermission("challange.oneblock")) return;
-        if (startItem.getItemMeta().hasEnchants()) {
-            setChallangeStarted(true);
+        if (!startItem.getItemMeta().hasEnchants()) {
             playersInChallange.add(player.getUniqueId());
-            OneBlock.setBlock(player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
             player.sendTitle(Messages.ONEBLOCK.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.ONEBLOCK.getMessage(), Durations.ONEBLOCK.getDurationIn(), Durations.ONEBLOCK.getDurationMain(), Durations.WRONGSTEP.getDurationOut());
-        } else {
-            setChallangeStarted(false);
+            Challanges.getChallenges().getUtil().getEventGUIHandler().getOneBlock().block.put(player.getUniqueId(), player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
         }
     }
 
+    public ArrayList<UUID> getPlayersInChallange() {
+        return playersInChallange;
+    }
 
     @Override
     public void resetChallange(Player player) {

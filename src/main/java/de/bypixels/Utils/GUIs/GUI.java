@@ -9,19 +9,37 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class GUI {
+    public GUI(int inventorySize, String inventoryName) {
+        this.inventorySize = inventorySize;
+        this.inventoryName = inventoryName;
+        createInventory();
+    }
 
 
-    public void fill(Inventory inv) {
-        ItemStack fill = new ItemStack(Material.PURPLE_STAINED_GLASS_PANE);
+    public Inventory createInventory() {
+        inventory = Bukkit.createInventory(null, inventorySize, inventoryName);
+        fill();
+        return inventory;
+    }
+
+    private static Material fillMaterial = Material.PURPLE_STAINED_GLASS_PANE;
+    public void fill() {
+        ItemStack fill = new ItemStack(fillMaterial);
         ItemMeta fillMeta = fill.getItemMeta();
         fillMeta.setDisplayName("");
         fillMeta.addEnchant(Enchantment.DURABILITY, 0, true);
         fill.setItemMeta(fillMeta);
-        for (int slot = 0; slot <= inv.getSize() - 1; slot++) {
-            if (inv.getItem(slot) == null)
-                inv.setItem(slot, fill);
+        for (int slot = 0; slot <= inventory.getSize() - 1; slot++) {
+            if (inventory.getItem(slot) == null)
+                inventory.setItem(slot, fill);
         }
     }
+
+
+    public void addItem(ItemStack item, int position) {
+        getInventory().setItem(position, item);
+    }
+
 
     private int inventorySize;
     private String inventoryName;
@@ -38,9 +56,13 @@ public class GUI {
         return inventoryName;
     }
 
-    public GUI(int inventorySize, String inventoryName) {
-        this.inventorySize = inventorySize;
-        this.inventoryName = inventoryName;
+
+    public static Material getFillMaterial() {
+        return fillMaterial;
+    }
+
+    public static void setFillMaterial(Material fillMaterial) {
+        GUI.fillMaterial = fillMaterial;
     }
 
     private Inventory inventory;
@@ -49,13 +71,7 @@ public class GUI {
         return inventory;
     }
 
-    public void addItem(int position, ItemStack item) {
-        getInventory().setItem(position, item);
-    }
 
-    public Inventory createInventory() {
-        inventory = Bukkit.createInventory(null, inventorySize, inventoryName);
-        fill(inventory);
-        return inventory;
-    }
+
+
 }
