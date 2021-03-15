@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6119a146-486b-46e7-bfbb-4a44ea774f7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/ItemGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangesGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/ChallangesMainGUICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/ClickGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/ClickGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/EventGUIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/EventGUIHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomDrops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomDrops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/ClickGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/ClickGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/EventGUIHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/EventGUIHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomDrops.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomDrops.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,18 +91,16 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,7 +143,10 @@
       <workItem from="1615550605197" duration="1784000" />
       <workItem from="1615552887854" duration="9455000" />
       <workItem from="1615625415706" duration="1290000" />
-      <workItem from="1615713022044" duration="7806000" />
+      <workItem from="1615713022044" duration="7824000" />
+      <workItem from="1615749316328" duration="1437000" />
+      <workItem from="1615809482212" duration="4159000" />
+      <workItem from="1615813698051" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="commit 4">
       <created>1615652785077</created>
@@ -151,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615724089505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="without .gitignore 2">
+      <created>1615724182922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615724182922</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +198,8 @@
     <MESSAGE value="commit 4" />
     <MESSAGE value="commit 5;&#10;added a few things + Bugfixes" />
     <MESSAGE value="without .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="without .gitignore" />
+    <MESSAGE value="without .gitignore 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="without .gitignore 2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

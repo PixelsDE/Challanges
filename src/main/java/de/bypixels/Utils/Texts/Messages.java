@@ -11,8 +11,8 @@ public enum Messages {
     ARGUMENTS(Challanges.getChallenges().getUtil().getFileHander().getMessage("arguments.title"), Challanges.getChallenges().getUtil().getFileHander().getMessage("arguments.message")),
     PERMISSION(Challanges.getChallenges().getUtil().getFileHander().getMessage("permission.title"), Challanges.getChallenges().getUtil().getFileHander().getMessage("permission.message")),
     BLOCKSTEP(Challanges.getChallenges().getUtil().getFileHander().getMessage("blockstep.title"), Challanges.getChallenges().getUtil().getFileHander().getMessage("blockstep.message")),
-    MUSTBEPLAYER(null, Challanges.getChallenges().getUtil().getFileHander().getMessage("mustplayer.message")),
-    PREFIX(null, Challanges.getChallenges().getUtil().getFileHander().getMessage("prefix"));
+    MUSTBEPLAYER(Challanges.getChallenges().getUtil().getFileHander().getMessage("mustplayer.message"), Challanges.getChallenges().getUtil().getFileHander().getMessage("mustplayer.message")),
+    PREFIX(Challanges.getChallenges().getUtil().getFileHander().getMessage("prefix"), Challanges.getChallenges().getUtil().getFileHander().getMessage("prefix"));
 
 
     String messageTitle, message;

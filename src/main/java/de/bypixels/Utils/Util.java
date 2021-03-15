@@ -24,8 +24,8 @@ public class Util {
     }
 
     public void setup() {
-        getRandomDrops().setupRandomDrops();
-        clickGUI = new ClickGUI(27, "§dChallanges Inventory");
+        getRandomDrops().setupChallange();
+        clickGUI = new ClickGUI(27, Challanges.getChallenges().getPrefix() + "§dChallanges Inventory");
         addInventories();
     }
 

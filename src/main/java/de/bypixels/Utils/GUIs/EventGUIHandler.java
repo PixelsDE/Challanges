@@ -1,11 +1,9 @@
 package de.bypixels.Utils.GUIs;
 
 import de.bypixels.Challanges;
-import de.bypixels.Utils.Texts.Durations;
-import de.bypixels.Utils.Texts.Messages;
 import de.bypixels.challanges.OneBlock;
 import org.bukkit.Bukkit;
-import org.bukkit.block.BlockFace;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -14,6 +12,8 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+
+
 
 public class EventGUIHandler implements Listener {
     private Challanges plugin;
@@ -39,11 +39,14 @@ public class EventGUIHandler implements Listener {
             return;
 
         if (inventory.equals(Challanges.getChallenges().getUtil().getClickGUI().getInventory())) {
-
+            //Colors the Item
+            if (item.getType() != Material.ACACIA_DOOR)
             Challanges.getChallenges().getUtil().getItems().enchantmentSwitch(item);
 
-            if (item.getItemMeta().getDisplayName().equals(Challanges.getChallenges().getUtil().getItems().OneBlockItem().getItemMeta().getDisplayName()))
-                oneBlockItem(player, item);
+            if (item.getItemMeta().getDisplayName().equals(Challanges.getChallenges().getUtil().getItems().OneBlockItem.getItemMeta().getDisplayName())) {
+                Bukkit.getPluginManager().registerEvents(oneBlock, Challanges.getChallenges());
+                oneBlock.startChallange(player, item);
+            }
             else if (inventory.equals(Challanges.getChallenges().getUtil().getRandomDrops().getRandromDropInventory()))
                 randomDropInventory(item, player);
 
@@ -51,19 +54,7 @@ public class EventGUIHandler implements Listener {
 
     }
 
-
-    private void oneBlockItem(Player player, ItemStack item) {
-        if (!player.hasPermission("challange.oneblock")) return;
-
-        if (item.getItemMeta().hasEnchants()) {
-            OneBlock.challangeStarted = true;
-            OneBlock.setBlock(player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
-            player.sendTitle(Messages.ONEBLOCK.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.ONEBLOCK.getMessage(), Durations.ONEBLOCK.getDurationIn(), Durations.ONEBLOCK.getDurationMain(),Durations.WRONGSTEP.getDurationOut());
-            Bukkit.getPluginManager().registerEvents(new OneBlock(Challanges.getChallenges()), Challanges.getChallenges());
-        } else {
-            OneBlock.challangeStarted = false;
-        }
-    }
+    OneBlock oneBlock = new OneBlock();
 
 
     //@Method: Anti Death Message
