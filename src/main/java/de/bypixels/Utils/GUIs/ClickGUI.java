@@ -19,11 +19,10 @@ public class ClickGUI extends GUI implements CommandExecutor {
 
     public ClickGUI(int inventorySize, String inventoryName) {
         super(inventorySize, inventoryName);
-        addItem( Challanges.getChallenges().getUtil().getItems().OneBlockItem,9);
-        addItem(Challanges.getChallenges().getUtil().getItems().RandomDropGUIItem,13);
+        addItem(Challanges.getChallenges().getUtil().getItems().OneBlockItem, 10);
+        addItem(Challanges.getChallenges().getUtil().getItems().RandomDropGUIItem, 14);
 
     }
-
 
 
     @Override
@@ -43,7 +42,7 @@ public class ClickGUI extends GUI implements CommandExecutor {
                 return false;
             }
 
-            player.openInventory(Challanges.getChallenges().getUtil().getClickGUI().getInventory());
+            player.openInventory(Challanges.getChallenges().getUtil().getInventories().get(0));
 
         }
         return false;

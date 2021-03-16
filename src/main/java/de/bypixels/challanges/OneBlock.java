@@ -34,19 +34,22 @@ public class OneBlock implements Listener, ChallangeHandler {
         if (block.get(player.getUniqueId()) == null) return;
         if (playerBlock == Material.AIR || playerBlock == Material.CAVE_AIR || playerBlock == Material.LARGE_FERN) return;
         if (!playerBlock.equals(block.get(player.getUniqueId()))) {
-            resetChallange(player);
+            player.sendTitle(Messages.BLOCKSTEP.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.BLOCKSTEP.getMessage(), Durations.WRONGSTEP.getDurationIn(), Durations.WRONGSTEP.getDurationMain(), Durations.WRONGSTEP.getDurationOut());
+
+            resetChallange(player, Challanges.getChallenges().getUtil().getItems().OneBlockItem);
         }
     }
 
 
+    public HashMap<UUID, Material> getBlock() {
+        return block;
+    }
+
     @Override
     public void startChallange(Player player, ItemStack startItem) {
         if (!player.hasPermission("challange.oneblock")) return;
-        if (!startItem.getItemMeta().hasEnchants()) {
-            playersInChallange.add(player.getUniqueId());
             player.sendTitle(Messages.ONEBLOCK.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.ONEBLOCK.getMessage(), Durations.ONEBLOCK.getDurationIn(), Durations.ONEBLOCK.getDurationMain(), Durations.WRONGSTEP.getDurationOut());
-            Challanges.getChallenges().getUtil().getEventGUIHandler().getOneBlock().block.put(player.getUniqueId(), player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
-        }
+            Challanges.getChallenges().getUtil().getOneBlock().block.put(player.getUniqueId(), player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
     }
 
     public ArrayList<UUID> getPlayersInChallange() {
@@ -54,13 +57,13 @@ public class OneBlock implements Listener, ChallangeHandler {
     }
 
     @Override
-    public void resetChallange(Player player) {
+    public void resetChallange(Player player, ItemStack startItem) {
         if (!playersInChallange.contains(player.getUniqueId()))
             return;
         player.setHealth(0);
-        playersInChallange.remove(player.getUniqueId());
-        player.sendTitle(Messages.BLOCKSTEP.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.BLOCKSTEP.getMessage(), Durations.WRONGSTEP.getDurationIn(), Durations.WRONGSTEP.getDurationMain(), Durations.WRONGSTEP.getDurationOut());
+        block.remove(player.getUniqueId());
         player.spigot().respawn();
+        Challanges.getChallenges().getUtil().getOneBlock().block.put(player.getUniqueId(), player.getLocation().getBlock().getRelative(BlockFace.DOWN).getType());
     }
 
     @Override

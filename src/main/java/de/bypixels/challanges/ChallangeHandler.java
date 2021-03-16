@@ -1,5 +1,6 @@
 package de.bypixels.challanges;
 
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -7,6 +8,6 @@ import org.bukkit.inventory.ItemStack;
 public interface ChallangeHandler {
 
     void startChallange(Player player, ItemStack startItem);
-    void resetChallange(Player player);
+    void resetChallange(Player player, ItemStack startItem);
     void setupChallange();
 }

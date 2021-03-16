@@ -40,6 +40,10 @@ public class FileHander {
         configuration.addDefault("blockstep.title", "&4Wrong Block");
         configuration.addDefault("blockstep.message", "&cYou stepped on the wrong Block!");
         configuration.addDefault("mustplayer.message", "&cYou must be a Player to do this!");
+        configuration.addDefault("random.blockbreak.title", "&aChallange started!");
+        configuration.addDefault("random.blockbreak.message", "&7Random Block-Break Challenge started!");
+        configuration.addDefault("challange.stop.title", "§4Challange Stopped!");
+        configuration.addDefault("challange.stop.message", "§7The selected Challange has stopped!");
         configuration.set("animation.wrongstep.in", 10);
         configuration.set("animation.wrongstep.main", 70);
         configuration.set("animation.wrongstep.out", 10);
@@ -52,6 +56,12 @@ public class FileHander {
         configuration.set("animation.arguments.in", 10);
         configuration.set("animation.arguments.main", 70);
         configuration.set("animation.arguments.out", 10);
+        configuration.set("animation.random.blockbreak.in", 10);
+        configuration.set("animation.random.blockbreak.main", 70);
+        configuration.set("animation.random.blockbreak.out", 10);
+        configuration.set("animation.stop.in", 10);
+        configuration.set("animation.stop.main", 70);
+        configuration.set("animation.stop.out", 10);
 
 
         configuration.options().copyDefaults(true);

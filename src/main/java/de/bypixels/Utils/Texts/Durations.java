@@ -8,7 +8,9 @@ public enum Durations {
     WRONGSTEP(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.wrongstep.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.wrongstep.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.wrongstep.out")),
     PERMISSION(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.permission.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.permission.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.permission.out")),
     ONEBLOCK(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.oneblock.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.oneblock.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.oneblock.out")),
-    ARGUMENTS(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.out"));
+    ARGUMENTS(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.arguments.out")),
+    BLOCKBREAK(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.random.blockbreak.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.random.blockbreak.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.random.blockbreak.out")),
+    STOP(Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.stop.in"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.stop.main"), Challanges.getChallenges().getUtil().getFileHander().getInteger("animation.stop.out"));
 
 
     Integer durationIn, durationMain, durationOut;

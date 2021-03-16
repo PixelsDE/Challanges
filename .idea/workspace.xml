@@ -5,28 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6119a146-486b-46e7-bfbb-4a44ea774f7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomCraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomCraft.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/RandomItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/RandomItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Challanges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Challanges.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Challanges.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/ClickGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/ClickGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/EventGUIHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/EventGUIHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/RandomInventoryGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/GUIs/RandomInventoryGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/ItemGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/ItemGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Durations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Durations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/FileHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/FileHander.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Texts/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/Utils/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/ChallangeHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/OneBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomCraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomCraft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomDrops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/bypixels/challanges/RandomDrops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Challanges.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/ClickGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/ClickGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/EventGUIHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/EventGUIHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/GUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/RandomInventoryGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/GUIs/RandomInventoryGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/ItemGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/ItemGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Durations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Durations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/FileHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/FileHander.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Texts/Messages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/Utils/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/ChallangeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/ChallangeHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/OneBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomCraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomCraft.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomDrops.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/bypixels/challanges/RandomDrops.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +58,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -85,17 +100,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.preview.features.used" value="true" />
-    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/org/spigotmc/spigot-api/1.16.5-R0.1-SNAPSHOT/spigot-api-1.16.5-R0.1-SNAPSHOT.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Carina/Desktop/Carina/Programmieren/API/spigot-1.16.5.jar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -150,7 +165,9 @@
       <workItem from="1615713022044" duration="7824000" />
       <workItem from="1615749316328" duration="1437000" />
       <workItem from="1615809482212" duration="4159000" />
-      <workItem from="1615813698051" duration="9692000" />
+      <workItem from="1615813698051" duration="9704000" />
+      <workItem from="1615843244882" duration="5647000" />
+      <workItem from="1615883603263" duration="15659000" />
     </task>
     <task id="LOCAL-00001" summary="commit 4">
       <created>1615652785077</created>
@@ -194,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615815211131</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cleanup api #1">
+      <created>1615826849954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615826849954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

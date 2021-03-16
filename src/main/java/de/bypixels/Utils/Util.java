@@ -3,6 +3,7 @@ package de.bypixels.Utils;
 import de.bypixels.Challanges;
 import de.bypixels.Utils.GUIs.ClickGUI;
 import de.bypixels.Utils.GUIs.EventGUIHandler;
+import de.bypixels.Utils.GUIs.GUI;
 import de.bypixels.Utils.GUIs.RandomInventoryGUI;
 import de.bypixels.Utils.Texts.Durations;
 import de.bypixels.Utils.Texts.FileHander;
@@ -25,9 +26,8 @@ public class Util {
 
     public void setup() {
         items = new Items();
-        getRandomDrops().setupChallange();
-       clickGUI = new ClickGUI(27,  "§dChallanges Inventory");
-        randomInventoryGUI= new RandomInventoryGUI(9, "§3Random Drop Inventory");
+        clickGUI = new ClickGUI(27, "§dChallanges Inventory");
+        randomInventoryGUI = new RandomInventoryGUI(9, "§3Random Drop Inventory");
         addInventories();
     }
 
@@ -42,6 +42,8 @@ public class Util {
     public EventGUIHandler getEventGUIHandler() {
         return eventGUIHandler;
     }
+
+
 
     public void setEventGUIHandler(EventGUIHandler eventGUIHandler) {
         this.eventGUIHandler = eventGUIHandler;
@@ -90,6 +92,17 @@ public class Util {
         return randomInventoryGUI;
     }
 
+    private OneBlock oneBlock = new OneBlock();
+
+    public OneBlock getOneBlock() {
+        return oneBlock;
+    }
+
+    private GUI gui = new GUI();
+
+    public GUI getGUI() {
+        return gui;
+    }
 }
 
 

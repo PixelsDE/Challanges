@@ -1,6 +1,7 @@
 package de.bypixels.Utils.GUIs;
 
 import de.bypixels.Challanges;
+import de.bypixels.Utils.Texts.Durations;
 import de.bypixels.Utils.Texts.Messages;
 import de.bypixels.challanges.OneBlock;
 import org.bukkit.Bukkit;
@@ -15,9 +16,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 
-public class EventGUIHandler implements Listener {
+public class EventGUIHandler extends GUI implements Listener {
     private Challanges plugin;
-
 
     public EventGUIHandler(Challanges plugin) {
 
@@ -31,40 +31,48 @@ public class EventGUIHandler implements Listener {
         ItemStack item = event.getCurrentItem();
         Inventory inventory = event.getClickedInventory();
 
+
         if (!Challanges.getChallenges().getUtil().getInventories().contains(inventory))
             return;
+
 
         event.setCancelled(true);
         player.updateInventory();
         if (!player.hasPermission("challanges.gui"))
             return;
 
-        if (!inventory.equals(Challanges.getChallenges().getUtil().getClickGUI().getInventory())) return;
+
+
+
+        if (!(inventory == Challanges.getChallenges().getUtil().getClickGUI().getInventory())) return;
+
 
         //gets the Item
         // that was "Clicked"
-        if (item.getItemMeta().equals(Challanges.getChallenges().getUtil().getItems().OneBlockItem.getItemMeta())) {
-            oneBlock = new OneBlock();
-            Bukkit.getPluginManager().registerEvents(oneBlock, Challanges.getChallenges());
-            oneBlock.startChallange(player, item);
-        } else if (item.getItemMeta().equals(Challanges.getChallenges().getUtil().getItems().RandomDropGUIItem.getItemMeta())) {
-            Bukkit.getPluginManager().registerEvents(Challanges.getChallenges().getUtil().getRandomInventoryGUI(), Challanges.getChallenges());
+        if (item.getItemMeta().getDisplayName().equals(Challanges.getChallenges().getUtil().getItems().OneBlockItem.getItemMeta().getDisplayName())) {
+            if (!item.getItemMeta().hasEnchants()) {
+                Bukkit.getPluginManager().registerEvents(Challanges.getChallenges().getUtil().getOneBlock(), Challanges.getChallenges());
+                Challanges.getChallenges().getUtil().getOneBlock().startChallange(player, item);
+                Challanges.getChallenges().getUtil().getOneBlock().getPlayersInChallange().add(player.getUniqueId());
+            } else {
+                Challanges.getChallenges().getUtil().getOneBlock().getPlayersInChallange().remove(player.getUniqueId());
+                Challanges.getChallenges().getUtil().getOneBlock().getBlock().remove(player.getUniqueId());
+                player.sendTitle(Messages.STOP.getMessageTitle(), Messages.PREFIX.getMessage() + Messages.STOP.getMessage(), Durations.STOP.getDurationIn(), Durations.STOP.getDurationMain(), Durations.STOP.getDurationOut());
+            }
+        } else if (item.getItemMeta().getDisplayName().equals(Challanges.getChallenges().getUtil().getItems().RandomDropGUIItem.getItemMeta().getDisplayName())) {
+            if (!player.hasPermission("gui.backtomaingui")) return;
             player.closeInventory();
-            player.openInventory(Challanges.getChallenges().getUtil().getRandomInventoryGUI().getInventory());
-
+            player.openInventory(Challanges.getChallenges().getUtil().getInventories().get(1));
+            Bukkit.getPluginManager().registerEvents(Challanges.getChallenges().getUtil().getRandomInventoryGUI(), Challanges.getChallenges());
         }
+
+
         //Colors the Item
-        if (item.getType() != Material.ACACIA_DOOR && item.getType() != Material.DIAMOND && item.getType() != GUI.getFillMaterial())
-            Challanges.getChallenges().getUtil().getItems().enchantmentSwitch(item);
+        checkEnchantmentSwitch(item);
 
 
     }
 
-    private OneBlock oneBlock;
-
-    public OneBlock getOneBlock() {
-        return oneBlock;
-    }
 
     //@Method: Anti Death Message
     @EventHandler(ignoreCancelled = true)
@@ -72,20 +80,5 @@ public class EventGUIHandler implements Listener {
         event.setDeathMessage(null);
     }
 
-
-    //TODO: Event fürs random drop machen
-
-    private void randomDropInventory(ItemStack item, Player player) {
-        if (!player.hasPermission("challanges.gui"))
-            //TODO here
-            return;
-
-
-    }
-
-    private void backToMainGUI(ItemStack item, Player player) {
-        if (!player.hasPermission("challanges.gui.random"))
-            return;
-    }
 
 }

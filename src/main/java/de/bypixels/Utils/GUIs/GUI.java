@@ -23,6 +23,7 @@ public class GUI {
     }
 
     private static Material fillMaterial = Material.PURPLE_STAINED_GLASS_PANE;
+
     public void fill() {
         ItemStack fill = new ItemStack(fillMaterial);
         ItemMeta fillMeta = fill.getItemMeta();
@@ -37,7 +38,7 @@ public class GUI {
 
 
     public void addItem(ItemStack item, int position) {
-        getInventory().setItem(position, item);
+        getInventory().setItem(position - 1, item);
     }
 
 
@@ -61,6 +62,11 @@ public class GUI {
         return fillMaterial;
     }
 
+    public void checkEnchantmentSwitch(ItemStack item) {
+        if (item.getType() != Material.ACACIA_DOOR && item.getType() != Material.DIAMOND && item.getType() != GUI.getFillMaterial())
+            Challanges.getChallenges().getUtil().getItems().enchantmentSwitch(item);
+    }
+
     public static void setFillMaterial(Material fillMaterial) {
         GUI.fillMaterial = fillMaterial;
     }
@@ -71,7 +77,6 @@ public class GUI {
         return inventory;
     }
 
-
-
-
+    public GUI() {
+    }
 }
